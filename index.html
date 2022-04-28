@@ -1,3 +1,683 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/content.css" />
+  
+  <script defer src="js/content.js"></script>
+  <script defer src="js/home.js"></script>
+
+</head>
+<body>
+  <div class="global-wrap">
+    <div class="hdr">
+      <div class="util-box">
+        <div class="logo-box">
+          <div class="logo">
+            <img src="img/logo/logo-white.png" />
+          </div>
+        </div>
+      </div>
+  
+      <div class="util-wrap">
+        <div class="util-box">
+          <div class="search-box-wrap">
+            <div class="input_tag">
+              <li class="detail-box">
+                <a href="javascript:void(0)" class="detail-icon">상세</a>
+              </li>
+              <ul class="input_tag__tags">
+                <div id="hashtags"></div>
+                <li class="input_tag__tags__input">
+                  <select name="searchType" id="searchType" style="display: none">
+                    <option value="KEYWORD">키워드</option>
+                    <option value="HASHTAG">해시태그</option>
+                  </select>
+                  <input type="text" id="keyword" placeholder="검색어를 입력하세요" name="keyword" />
+                </li>
+              </ul>
+              <div class="search-box">
+                <button id="searchBtn">검색</button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="location-selected-wrap">
+            <div class="condition-reset-wrap"></div>
+            <div class="areabox"></div>
+          </div>
+  
+          <div class="menu">
+            <input type="checkbox" class="detailCHK" id="collapsible" />
+            <div class="menuitems">
+              <div class="detailChoice">
+                <div class="detailmenu">
+                  <div class="Area">
+                    <li class="is_on">
+                      <a href="#tab1" class="btn tab1 align-hashtag hashtag-coffee" id="btn tab1">커피</a>
+                    </li>
+                    <li>
+                      <a href="#tab2" class="btn tab2 align-hashtag hashtag-beverage" id="btn tab2">음료</a>
+                    </li>
+                    <li>
+                      <a href="#tab3" class="btn tab3 align-hashtag hashtag-dessert" id="btn tab3">디저트</a>
+                    </li>
+                    <li>
+                      <a href="#tab4" class="btn tab4 align-hashtag align-goods" id="btn tab4">굿즈</a>
+                    </li>
+                    <li>
+                      <a href="#tab5" class="btn tab5 align-hashtag align-mood" id="btn tab5">분위기</a>
+                    </li>
+                    <li>
+                      <a href="#tab6" class="btn tab6 align-hashtag align-view" id="btn tab6">뷰</a>
+                    </li>
+                    <li>
+                      <a href="#tab7" class="btn tab7 align-hashtag align-location" id="btn tab7">지역</a>
+                    </li>
+                  </div>
+  
+                  <div class="scroll Areaboxs">
+                    <div id="tab1" class="cont" style="z-index: 2">
+                      <div class="btn-coffee">
+                        <label for="">coffee</label>
+                      </div>
+                    </div>
+                    <div id="tab2" class="cont">
+                      <div class="btn-beverage">
+                        <label for="">beverage</label>
+                      </div>
+                    </div>
+                    <div id="tab3" class="cont">
+                      <div class="btn-dessert">
+                        <label for="">dessert</label>
+                      </div>
+                    </div>
+                    <div id="tab4" class="cont">
+                      <div class="btn-goods">
+                        <label for="">goods</label>
+                      </div>
+                    </div>
+                    <div id="tab5" class="cont">
+                      <div class="btn-mood">
+                        <label for="">mood</label>
+                      </div>
+                    </div>
+                    <div id="tab6" class="cont">
+                      <div class="btn-view">
+                        <label for="">view</label>
+                      </div>
+                    </div>
+                    <div id="tab7" class="cont">
+                      <div class="btn-location">
+                        <label for="">location</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="global-wrap">
+    <div class="main">
+      <div class="inner main-inner">
+        <div class="shop-list-wrap">
+          <div class="shop-list-box">
+            <ul class="shops-box">
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/22/B0105/0544772e-a517-4f55-8504-409236dba57c.jfif" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/22">스타벅스 울산국가정원점</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#스타벅스</span>
+                          <span class="mainHashtag">#태화강 국가정원</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#공원뷰</span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/21/B0105/00e5cfe5-dd74-4d6a-971e-551d4d7b0b35.jpg" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/21">파나카S</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#울산 방어진</span>
+                          <span class="mainHashtag">#슬도</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#오션뷰</span>
+                          <span class="mainHashtag">#인절미 브라우니</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/20/B0105/f7be2f12-59b8-4a4c-b38b-4bbe18a566f6.jfif" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/20">유동커피 북울산점</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#제주 유동커피</span>
+                          <span class="mainHashtag">#카페티블랑</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#울산 북구</span>
+                          <span class="mainHashtag">#엔틱 인테리어</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/19/B0105/8b6ba137-cffa-48e1-96f4-6678f65041b5.jpg" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/19">카페 숲</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#울산 주전 카페</span>
+                          <span class="mainHashtag">#오션뷰</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#몽돌해수욕장</span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/18/B0105/0cda87df-c706-4482-bf4d-b69ae4db9a19.jpg" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/18">카페 솔츠</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#반려동물 동반</span>
+                          <span class="mainHashtag">#울산 공업탑</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#소금이</span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/17/B0105/d147f834-dbf9-4046-8d6c-48493ba838b3.jpg" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/17">담소</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#전통차</span>
+                          <span class="mainHashtag">#한옥 카페</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#넓은 정원</span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/16/B0105/56d0c8e9-9d4f-4de2-bd78-b528ce4f3d37.jpg" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/16">이디야커피 울산주전해수욕장점</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#이디야 커피</span>
+                          <span class="mainHashtag">#주전몽돌해수욕장</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#오션뷰</span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/15/B0105/e0eb8660-564f-41e4-b073-7ca5bceadf9a.jpg" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/15">이디야커피 방어점</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#이디야 커피</span>
+                          <span class="mainHashtag">#방어진항</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#슬도</span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/14/B0105/734ca4bd-56a8-4c8f-91c6-654fd77102f2.jpg" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/14">오븐캐비넷</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#핸드드립</span>
+                          <span class="mainHashtag">#수제 디저트</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#반겨련 동반 가능</span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/13/B0105/b41507b0-cdda-4b7b-9694-60bb2deb0459.jpg" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/13">오브제샌드커피</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#수제 샌드위치</span>
+                          <span class="mainHashtag">#크레커 머랭</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#울주경찰서앞</span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/12/B0105/9d5be738-829e-4ec5-a100-42a79cc3b0a9.jpg" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/12">열두달</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#수제 케이크</span>
+                          <span class="mainHashtag">#체리 레몬티</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag">#밀푀유</span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+  
+              <li class="shop-each">
+                <div class="shop-container">
+                  <div class="shop-container-util shop-each_img shop-img-rd">
+                    <img src="/attach/11/B0105/03917d53-8b44-430c-a3cd-84d186460e1e.jfif" />
+                  </div>
+                  <div class="shop-container-util shop-each_title">
+                    <span><a href="/coffeeShop/detail/11">싱귤러커피 울산본점</a></span>
+                  </div>
+                  <div class="shop-container-util shop-each_hashtag">
+                    <ul>
+                      <li class="shop-hashtag-rep rep1">
+                        <div>
+                          <span class="mainHashtag">#포밍멜로우</span>
+                          <span class="mainHashtag">#한옥 카페</span>
+                        </div>
+                      </li>
+                      <br />
+                      <li class="shop-hashtag-rep rep2">
+                        <div>
+                          <span class="mainHashtag"></span>
+                          <span class="mainHashtag"></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="global-wrap">
+    <div class="main">
+      <div class="inner main-inner">
+        <!-- container -->
+        <!-- width : standard -->
+        <div class="container">
+          <!-- shop_info -->
+          <div class="shop_info_wrap">
+            <div class="shop-info">
+              <div class="shop-info_img">
+                <div class="info-img-box">
+                  <div class="shop-img-slide-box">
+                    <div class="shop-img fade" style="display: block">
+                      <img src="/attach/22/B0101/86949113-908e-4d74-ba42-84e57b3f7c72.jfif" />
+                    </div>
+                  </div>
+                  <div class="shop-img-slide-box">
+                    <div class="shop-img fade" style="display: none">
+                      <img src="/attach/22/B0101/cf22ad58-48fa-40ff-8354-13e48f660fcd.jfif" />
+                    </div>
+                  </div>
+                  <div class="shop-img-slide-box">
+                    <div class="shop-img fade" style="display: none">
+                      <img src="/attach/22/B0101/20487eb6-e6df-4b16-bba8-c09f3bf8c580.jfif" />
+                    </div>
+                  </div>
+                  <div class="shop-img-slide-box">
+                    <div class="shop-img fade" style="display: none">
+                      <img src="/attach/22/B0101/1bd1cc2a-6f18-4f59-b6de-3481fd06044f.jfif" />
+                    </div>
+                  </div>
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br />
+              </div>
+  
+              <!-- shop-info_content-wrap -->
+              <div class="shop-info-content-wrap">
+                <div class="shop-info-content shop-title-sub-box">
+                  <div class="shop-title-sub">
+                    <h1 id="shopName">이름</h1>
+  
+                    <a href="javascript:void(0)" id="heartBtn" class="heart-btn 1" style="background-image: url('img/icon/icon-heart-empty-red.png')"
+                      >등록</a
+                    >
+  
+                    <a href="javascript:void(0)" class="link-btn">현재 url 복사</a>
+                  </div>
+                </div>
+                <div class="shop-info-content shop-location-sub-box">
+                  <div class="shop-location-icon-box icon-box">
+                    <a href="#" class="location-icon"></a>
+                  </div>
+                  <div class="location-txt txt-box">
+                    <span id="shopAddress">울산 중구 태화강국가정원길 205</span>
+                  </div>
+                </div>
+                <div class="shop-info-content shop-call-sub-box">
+                  <div class="shop-call-icon-box icon-box">
+                    <a href="#" class="call-icon"></a>
+                  </div>
+                  <div class="call-txt txt-box">
+                    <span>연락가능한곳</span>
+                  </div>
+                </div>
+                <div class="shop-info-content shop-hashtag-sub-box">
+                  <div class="shop-hashtag-icon-box icon-box">
+                    <img src="img/icon/icon-hashtag.png" class="hashtag-icon" />
+                  </div>
+                  <div class="hashtag-txt txt-box">
+                    <div>
+                      <span class="mainHashtag">#스타벅스</span>
+                      <span class="mainHashtag">#태화강 국가정원</span>
+                    </div>
+                    <br />
+                    <div>
+                      <span class="mainHashtag">#공원뷰</span>
+                      <span class="mainHashtag"></span>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="shop-info-content">
+                  <div class="shop-parking-icon-box icon-box">
+                    <img src="img/icon/parking.png" class="allday-parking-icon" />
+                  </div>
+                  <div class="parking-txt txt-box">
+                    <span>아니오</span>
+                  </div>
+                  <div class="shop-allday-icon-box icon-box">
+                    <img src="img/icon/24-hours.png" class="allday-parking-icon" />
+                  </div>
+                  <div class="allday-txt txt-box">
+                    <span>아니오</span>
+                  </div>
+                </div>
+              </div>
+              <div class="map-box">프로젝트 링크 넣을곳 썸네일</div>
+            </div>
+          </div>
+          <!-- End of shop_info -->
+  
+          <!-- shop-contents_all -->
+          <div class="shop-contents_all">
+            <div class="content-info_wrap">
+              <div class="content-info">
+                <div class="content-info_title">
+                  <span>음료</span>
+                </div>
+                <div class="content-info_btn">
+                  <a href="javascript:void(0)" class="info-btn btn_beverage"></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="menu-item-box menu_beverage">
+              <ul class="item"></ul>
+            </div>
+  
+            <div class="content-info_wrap">
+              <div class="content-info">
+                <div class="content-info_title">
+                  <span>디저트</span>
+                </div>
+                <div class="content-info_btn">
+                  <a href="javascript:void(0)" class="info-btn btn_dessert">&gt;</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="menu-item-box menu_dessert">
+              <ul class="item"></ul>
+            </div>
+  
+            <div class="content-info_wrap">
+              <div class="content-info">
+                <div class="content-info_title">
+                  <span>굿즈</span>
+                </div>
+                <div class="content-info_btn">
+                  <a href="javascript:void(0)" class="info-btn btn_goods">&gt;</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="menu-item-box menu_goods">
+              <ul class="item"></ul>
+            </div>
+  
+            <!-- 리뷰 메뉴 바 -->
+            <div class="content-info_wrap">
+              <div class="content-info">
+                <div class="content-info_title">
+                  <span>리뷰</span>
+                </div>
+                <div class="content-info_btn">
+                  <a href="javascript:void(0)" class="info-btn btn_review" style="background-image: url('img/icon/icon-triangle-white.png')">&gt;</a>
+                </div>
+              </div>
+            </div>
+            <!-- 리뷰 신고 form -->
+            <div id="reportForm" class="report-wrap">
+              <div class="report-header-wrap">
+                <input type="hidden" id="repReviewId" />
+                <span>신고 사유</span>
+              </div>
+              <div class="report-body-wrap">
+                <p>
+                  <label for="r0"><input type="radio" class="repRadio" name="report" id="r0" value="0" /><span>스팸(부적절한 홍보)</span></label>
+                </p>
+                <p>
+                  <label for="r1"><input type="radio" class="repRadio" name="report" id="r1" value="1" /><span>음란물</span></label>
+                </p>
+                <p>
+                  <label for="r2"><input type="radio" class="repRadio" name="report" id="r2" value="2" /><span>혐오표현</span></label>
+                </p>
+                <p>
+                  <label for="r3"><input type="radio" class="repRadio" name="report" id="r3" value="3" /><span>욕설 및 비방</span></label>
+                </p>
+              </div>
+              <div class="report-btn-wrap">
+                <input type="button" class="btn-y" id="btnY" value="신고하기" />
+                <input type="button" class="btn-n" id="btnN" value="돌아가기" />
+              </div>
+            </div>
+            <!-- 리뷰 공간 전체 -->
+            <div class="review-wrap menu_review" style="display: block">
+              <!-- 작성된 리뷰 출력 -->
+              <div class="review-box">
+                <div class="addReview">
+                  <div class="review-write-box">
+                    <input type="text" class="write-review" placeholder="리뷰를 작성해주세요" />
+                    <button type="button" class="writeBtn">등록</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of shop-contents_all -->
+        </div>
+      </div>
+      <!-- End of container -->
+    </div>
+  </div>  
+</body>
+</html>
