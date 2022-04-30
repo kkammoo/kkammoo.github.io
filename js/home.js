@@ -1,6 +1,6 @@
 'use strict';
 
-const $body = document.querySelector('.util-wrap');
+const $body = document.querySelector('.body');
 $body?.addEventListener('click', click_f, true);
 
 const $detail_icon = document.querySelector('.detail-icon');
@@ -11,16 +11,32 @@ function click_f(evt) {
   if (evt.target.matches('.detail-icon')) {
     if ($detailCHK.checked == true) {
       $detail_icon.addEventListener('click', (evt) => {
-        // $detail_icon.style.display = "none";
         $detail_icon.style.backgroundImage = "url('/img/icon/icon-triangle_inverted.png')";
         $detailCHK.checked = false;
       });
     } else if ($detailCHK.checked == false) {
       $detail_icon.addEventListener('click', (evt) => {
-        // $detail_icon.style.display = "block";
         $detail_icon.style.backgroundImage = "url('/img/icon/icon-triangle.png')";
         $detailCHK.checked = true;
       });
+    }
+  }
+
+  if (evt.target.matches('.detail-info')) {
+    if ($detailCHK.checked == true) {
+      $detail_icon.click();
+      $detail_icon.style.backgroundImage = "url('/img/icon/icon-triangle_inverted.png')";
+      $detailCHK.checked = false;
+    } else if ($detailCHK.checked == false) {
+      $detail_icon.click();
+      $detail_icon.style.backgroundImage = "url('/img/icon/icon-triangle.png')";
+      $detailCHK.checked = true;
+    }
+  }
+
+  if (evt.target.matches('.detail-Page')) {
+    if ($detailCHK.checked == true) {
+      $detail_icon.click();
     }
   }
 
